@@ -1,0 +1,158 @@
+
+  .home {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .content {
+    width: 100vw;
+    padding: 2rem 10.7rem;
+    margin-left: 15rem;
+  }
+  
+  header {
+    
+    padding-left: 4.3rem;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    margin-bottom: 4rem;
+  }
+  
+  /*Header*/
+  
+  header img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
+  
+  header .navheader {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .navheader .user {
+    display: flex;
+    gap: .6rem;
+  }
+  
+  .navheader .user span {
+    margin-right: 1.2rem;
+    font-size: 1.3rem;
+  }
+  
+  .navheader .user button {
+    border: none;
+    background-color: #ececec;
+    font-weight: 600;
+    font-size: .9rem;
+    padding: 6px 15px;
+    border-radius: .6rem;
+  }
+  .navheader .user .follow {
+    background-color: #007bff;
+    color: #fff;
+    opacity: 80%;
+  }
+  
+  .navheader .user .follow a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navheader .user .follow:hover{
+    cursor: pointer;
+    opacity: 100%;
+  }
+  
+  .navheader .user button:hover:not(.follow) {
+    cursor: pointer;
+    background-color: #c6c6c6;
+  }
+  
+  .navheader .stats {
+    display: flex;
+    gap: 2.2rem;
+  }
+  
+  .navheader .stats .counts {
+    font-weight: 600;
+  
+  }
+  
+  .navheader .description {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navheader .profile-name {
+    font-weight: 600;
+  }
+  
+  .navheader .description a{
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+    font-weight: 350;
+  }
+  
+  .highlights {
+    display: flex;
+    padding-left: 3.3rem;
+    margin-bottom: 4rem;
+  }
+  .highlights div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .6rem;
+  }
+  
+  .highlights img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  
+  
+  /*FEED*/
+  
+  .feed {
+    height: 100vh;
+    border-top: solid 1px #c6c6c6;
+    padding-top: 1rem;
+    height: 100vh;
+  }
+  
+  .feed-content {
+    display: flex;
+    justify-content: center;
+    gap: 3.8rem;
+    color: #666666;
+    font-size: .8rem;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .feed-content div:hover {
+    cursor: pointer;
+  }
+  
+  .feed-content .indicator.active {
+    color: black;
+    border-top: solid 1px #212121;
+    margin-top: -1rem;
+    padding-top: 1rem;
+  }
+  /*HEADER*/
+  
+  nav {
+    padding-top: 2rem;
+    height: 100vh;
+    width: 16.1%;
+    position: fixed;
+    border-right: 1px solid #c6c6c6;
+  }

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    gap: 1rem;
+}
+
+.navbar h2 {
+    margin-bottom: 1rem;
+}
+
+.nav-home{
+    font-family: "Satisfy", sans-serif, cursive;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: black;
+    padding-left: 1rem;
+}
+
+.navbar a:not(.nav-home){
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    color: black;
+    transition: .1s;
+    padding: .9rem;
+    border-radius: 10px;
+}
+
+.navbar .nav-icons{
+    text-decoration: none;
+    color: black;
+    transition: .1s;
+    transform: scale(1.6);
+    padding-left: .2rem;
+}
+
+.navbar a:hover .nav-icons{
+    transform: scale(1.7);
+}
+
+.navbar a:not(.nav-home):hover{
+    background-color: #f5f5f5;
+}
+
+
+
+.profile-image  {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    transition: .1s;
+    border: 2px solid black;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: column;
+}
+
+.technologies:hover .profile-image{
+    transform: scale(1.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.technologies span:not(.nav-title span) {
+    font-size: .9rem;
+    padding-left: 1rem;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+    padding: .9rem;
+    border-radius: 10px;
+}
+
+.nav-title:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}

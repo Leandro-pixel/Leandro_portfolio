@@ -1,0 +1,11 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+}
+
+.emoji {
+    font-size: 10rem;
+    text-align: center;
+}

@@ -1,0 +1,69 @@
+
+body {
+    margin: 0;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 4px;
+    justify-content: center;
+}
+
+.image {
+    background-color: black;
+    height: 15rem;
+}
+
+.image img{
+    width: 19rem;
+    height: 15rem;
+}
+
+.image img:hover {
+    cursor: pointer;
+    opacity: 0.70;
+}
+
+.enlarged-photo-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlarged-photo-container {
+    max-width: 42%;
+    height: 40.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.enlarged-photo-container img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0; /*aqui foi sacada genial*/
+}
+
+.modal {
+    max-width: 87%;
+    max-height: 90%;
+    margin-left: 13%;
+}
+
+.descriptionModal {
+    background-color: #fff;
+    width: 31.7rem;
+    height: 93%;
+    margin-right: 0%;
+    border-left: 1px solid #c6c6c6;
+}
