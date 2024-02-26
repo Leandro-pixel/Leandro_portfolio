@@ -1,7 +1,7 @@
 import './Dm.css'
 
 import { Link } from 'react-router-dom';
-import { useEffect,useState } from 'react';
+import { useState } from 'react';
 
 import { BsInstagram } from "react-icons/bs";
 import { LuLinkedin } from "react-icons/lu";
@@ -76,7 +76,7 @@ const Dm = () => {
           
           <div className="dm-email">
             <div className="greetins">
-              Me envie uma menssagem!
+              Me envie um E-mail!
               
             </div>
             <p>Primeiro insira seus dados abaixo:</p>
