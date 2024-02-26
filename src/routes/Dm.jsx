@@ -39,7 +39,6 @@ const Dm = () => {
     try {
       const response = await emailjs.send("service_g51cbtm", "template_j7yk21u", templateParams,"84kJ-Ek7pU4LxRNDm");
 
-      console.log(response.status)
       setName("")
       setEmail("")
       setMessage("")
