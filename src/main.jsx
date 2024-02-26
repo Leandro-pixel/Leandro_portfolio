@@ -5,7 +5,7 @@ import './index.css'
 
 import { Provider } from 'react-redux'
 import store from './utils/store.js'
-import {createHashRouter, RouterProvider, Route} from 'react-router-dom'
+import {createHashRouter, RouterProvider} from 'react-router-dom'
 
 import Home from './routes/Home'
 import Dm from './routes/Dm'
