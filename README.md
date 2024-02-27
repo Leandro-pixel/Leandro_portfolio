@@ -1,4 +1,8 @@
-# React + Vite
+[Imagem da tela inicial](./src/assets/For-Readme/Tela%20inicial.jpeg)
+
+[Aqui pode visualizar meus projetos como se estivesse navegando meu feed do instagram](./src/assets/For-Readme/feed%20de%20projetos.jpeg)
+
+[Aqui você pode me mandar um e-mail como se estivesse enviando uma mensagem na minha DM](./src/assets/For-Readme/Dm(envia%20e-mail).jpeg)
 
 [Assista o Vídeo da aplicação](./src/assets/For-Readme/screen_InstaPortifólio.mp4)
 
