@@ -105,7 +105,7 @@ const commentTitles = [
 const commentsSlice = createSlice({
   name: 'comments',
   initialState: {
-    profilePhoto: "https://scontent.fsod2-1.fna.fbcdn.net/v/t51.2885-15/417958423_195848176888003_1387595097732865218_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7d201b&_nc_eui2=AeHoc8MeZw-uBYlCNof62jdlHKDy43TcuvkcoPLjdNy6-U5wKM3IhIZzK9GlaWb_fqm9g3OccJ38IcPyjB08ePp-&_nc_ohc=PjmqXVB4FZUAX9pwQeh&_nc_ht=scontent.fsod2-1.fna&edm=AL-3X8kEAAAA&oh=00_AfC8ax_TGFkTqZ3ulPPNkFspXax95V2JGCsAVFgTJi0sFw&oe=65DDAC24",
+    profilePhoto: "",
     titles: [...commentTitles],
     items: [
       'Usuários podem filtrar a imagens desejada tanto por categoria quando por pesquisa, as imagens são resgatadas de uma API.',
@@ -128,19 +128,12 @@ const commentsSlice = createSlice({
     ]
     },
   reducers: {
-    setTitle: (state, action) => {
-        const { index, text, icons } = action.payload;
-        state.titles[index] = {
-          text,
-          icons: icons || [], 
-        };
-      },
     setProfilePhoto: (state, action) => {
         state.profilePhoto = action.payload;
-      },
+      }
   },
 });
 
-export const { setTitle, setProfilePhoto } = commentsSlice.actions;
+export const { setProfilePhoto } = commentsSlice.actions;
 
 export default commentsSlice.reducer;

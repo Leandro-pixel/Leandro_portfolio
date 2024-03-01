@@ -11,6 +11,9 @@ import axios from 'axios'
 import Projects from "../components/Projects";
 import Gifs from "../components/Gifs";
 import About from "../components/About";
+import { setProfilePhoto } from '../utils/slices/commentSlice';
+import { useDispatch } from 'react-redux';
+
 
 
 const Home = () => {
@@ -19,6 +22,8 @@ const Home = () => {
   const [profileInfo, setProfileInfo] = useState([]);
   const [mediaUrls, setMediaUrls] = useState([]);
   const [feedChange, setFeedChange] = useState(0);
+
+  const dispatch = useDispatch();
 
   const token = import.meta.env.VITE_INSTA_TOKEN;
 
@@ -59,12 +64,25 @@ const Home = () => {
     setFeedChange(index);
   };
 
+  const handleChange = () => {
+
+    const photo = profileInfo;
+
+    if(photo) {
+    dispatch(setProfilePhoto(photo))
+    }
+  }
+
   useEffect(() => {
     getInstaFeed();
     setFeedChange(1);
   }, [])
 
- 
+  useEffect(() => {
+    if(profileInfo && profileInfo.profile_picture_url ) {
+      dispatch(setProfilePhoto(profileInfo.profile_picture_url))
+    }
+  }, [profileInfo])
 
 
   return (
@@ -86,7 +104,7 @@ const Home = () => {
               <Link to={`/Dm`}>
               <button>Message</button>
               </Link>
-              <button>Edit Profile</button>
+              <button onClick={handleChange}>Edit Profile</button>
 
             </div>
 

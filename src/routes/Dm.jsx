@@ -9,7 +9,7 @@ import { FiGithub } from "react-icons/fi";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsMessenger } from "react-icons/bs";
 
-import { useSelector } from 'react-redux';
+import { useSelector} from 'react-redux';
 
 import {useForms} from "../hooks/useForms";
 import emailjs from '@emailjs/browser'
@@ -21,7 +21,6 @@ const Dm = () => {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   const [sent, setSent] = useState(0)
-
  
 
   const profilePhoto = useSelector((state) => state.comments.profilePhoto);
