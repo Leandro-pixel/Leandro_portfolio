@@ -2,7 +2,7 @@
   "name": "portfolio-insta",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://leandro-pixel.github.io/Leandro_Soares",
+  "homepage": "https://leandro-pixel.github.io/Leandro_portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
