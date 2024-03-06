@@ -156,3 +156,7 @@
     position: fixed;
     border-right: 1px solid #c6c6c6;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1300px) {
+    
+  }

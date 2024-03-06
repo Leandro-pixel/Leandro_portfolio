@@ -39,7 +39,7 @@ body {
 
 .enlarged-photo-container {
     max-width: 42%;
-    height: 40.5rem;
+    height: 93%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,8 +62,157 @@ body {
 
 .descriptionModal {
     background-color: #fff;
-    width: 31.7rem;
+    max-width: 42%;
     height: 93%;
     margin-right: 0%;
     border-left: 1px solid #c6c6c6;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    .image {
+        height: 10rem;
+    }
+    
+    .image img{
+        width: 14rem;
+        height: 10rem;
+    }
+
+    
+    .enlarged-photo-container {
+        max-width: 50%;
+        max-height: 80%;
+    }
+    
+    .enlarged-photo-container img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0; /*aqui foi sacada genial*/
+    }
+    
+    .modal {
+        max-width: 87%;
+        max-height: 100%;
+    }
+
+    .descriptionModal {
+        max-width: 42%;
+        max-height: 80%;
+    }
+    
+}
+
+@media screen and (min-width: 671px) and (max-width: 1024px) {
+    .image {
+        height: 6rem;
+    }
+    
+    .image img{
+        width: 10rem;
+        height: 6rem;
+    }
+
+    
+    .enlarged-photo-container {
+        max-height: 80%;
+    }
+    
+    .enlarged-photo-container img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0; /*aqui foi sacada genial*/
+    }
+    
+    .modal {
+        max-width: 87%;
+        max-height: 100%;
+    }
+
+    .descriptionModal {
+        max-width: 42%;
+        max-height: 80%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 760px) {
+    .enlarged-photo-backdrop {
+        flex-direction: column;
+    }
+
+    .descriptionModal {
+        max-width: 60%;
+        max-height: 43%;
+        border-radius: 2rem;
+    }
+
+    .enlarged-photo-container {
+        max-width: 60%;
+        max-height: 40%;
+        border-radius: 2rem;
+        width: 100%;
+    }
+
+    
+    .enlarged-photo-container img {
+        height: 60%;
+    }
+   
+}
+
+@media screen and (max-width: 560px) {
+    
+    .descriptionModal {
+        max-height: 38%;
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+    .enlarged-photo-container {
+        max-height: 33%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .descriptionModal {
+        max-height: 30%;
+    }
+    .enlarged-photo-container img {
+        height: 40%;
+        
+    }
+    .enlarged-photo-container {
+        max-height: 33%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .descriptionModal {
+        max-height: 30%;
+        font-size: 1.6rem;
+    }
+    .enlarged-photo-container img {
+        height: 50%;
+        width: 100%;
+    }
+    .enlarged-photo-container {
+        max-height: 33%;
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .descriptionModal {
+        max-height: 23%;
+        font-size: 1.6rem;
+    }
+    .enlarged-photo-container img {
+        height: 40%;
+        width: 100%;
+    }
+    .enlarged-photo-container {
+        max-height: 26%;
+        width: 50rem;
+    }
 }

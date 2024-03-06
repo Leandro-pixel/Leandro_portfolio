@@ -1,3 +1,8 @@
+.section-container {
+    max-height: 100%;
+    max-width: 100%;
+   
+}
 
 .comment-header {
     display: flex;
@@ -24,6 +29,7 @@
     gap: 2rem;
     height: 60vh;
     border-bottom: 1px solid #c6c6c6;
+
 }
 
 .my-comment {
@@ -56,6 +62,7 @@
 
 /*likes section*/
 
+
 .likes {
     padding: 1rem 1rem 1.5rem;
 }
@@ -80,4 +87,32 @@
     padding-left: 1rem;
     border: none;
     outline: none;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    .comments {
+        height: 48vh;
+    }
+   
+}
+
+@media screen and (min-width: 671px) and (max-width: 1024px) {
+   
+    .comments {
+        max-height: 60vh;
+    }
+
+    .react-icons {
+        font-size: 1.2rem;
+        
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .comments {
+        height: auto;
+
+    }
+
+    
 }

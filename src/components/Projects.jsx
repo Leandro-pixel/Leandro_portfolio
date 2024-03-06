@@ -54,7 +54,6 @@ const Projects = ({profileInfo}) => {
 
     const handleClick = (index) => {
         setPhotoModal(index)
-        console.log(index)
     }
 
     useEffect(() => {
