@@ -100,11 +100,14 @@ const Home = () => {
             {profileInfo && (
               <span>{(profileInfo.username)}</span>
             )}
+            <div className="buttons-div">
+              
+            </div>
               <button className="follow"><a href="https://www.instagram.com/leandro.mgrc/">Follow</a></button>
               <Link to={`/Dm`}>
               <button>Message</button>
               </Link>
-              <button onClick={handleChange}>Edit Profile</button>
+              <button className="edit" onClick={handleChange}>Edit Profile</button>
 
             </div>
 
