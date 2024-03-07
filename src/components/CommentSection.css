@@ -116,3 +116,16 @@
 
     
 }
+
+@media screen and (max-width: 270px) {
+    .comment-header {
+        display: none;
+    }
+
+    .comments a{
+        flex-direction: column;
+    }
+    .my-comment {
+        flex-direction: column;
+    }
+}

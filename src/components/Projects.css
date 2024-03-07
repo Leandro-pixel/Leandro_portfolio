@@ -202,15 +202,31 @@ body {
     }
 }
 
-@media screen and (max-width: 270px) {
+@media screen and (max-width: 320px) {
     .descriptionModal {
-        max-height: 23%;
+        max-height: 25%;
         font-size: 1.6rem;
     }
     .enlarged-photo-container img {
         height: 40%;
         width: 100%;
     }
+    .enlarged-photo-container {
+        max-height: 26%;
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .descriptionModal {
+        max-height: 28%;
+        font-size: 1.6rem;
+    }
+    .enlarged-photo-container img {
+        height: 40%;
+        width: 100%;
+    }
+
     .enlarged-photo-container {
         max-height: 26%;
         width: 50rem;
