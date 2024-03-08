@@ -79,7 +79,7 @@ const Dm = () => {
               
             </div>
             <p>Primeiro insira seus dados abaixo:</p>
-          <div>
+          <div className='name'>
           <label htmlFor="name">Nome:</label>
           <input 
           type="text" 
@@ -93,7 +93,7 @@ const Dm = () => {
           {errors.name && <small>{errors.name.message}</small>}
           </div>
 
-          <div>
+          <div className='email'>
           <label htmlFor="email">E-mail:</label>
           <input 
           type="text" 

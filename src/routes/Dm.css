@@ -79,7 +79,6 @@
     gap: 1rem;
     align-items: center;
     border-right: 1px solid #c6c6c6;
-    
 }
 
 .dm-email input {
@@ -173,3 +172,104 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 1020px) {
+
+    .greetins {
+        padding: 1rem;
+    }
+
+    .dm-email {
+        padding: 1rem;
+    }
+
+    .dm-email input {
+        margin-left: 0;
+    }
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .email{
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .dm-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dm-nav {
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        height: 3rem;
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        background-color: #fff;
+    }
+    
+    .dm-nav .instaHome{
+        margin-bottom: 0rem;
+    }
+    
+    .dm-nav a{
+        margin-bottom: 0rem;
+    }
+    
+
+    .dm-message-conatiner{
+        margin-top: 2rem;
+        
+    }
+
+    .dm-message-conatiner form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dm-email{
+        
+        border-right: none;
+        border-bottom: 1px solid #c6c6c6;
+    }
+
+    .dm-email {
+        display: flex;
+        flex-direction: column;
+        height: 22rem;
+        width: 100vw;
+        margin-left: 0rem;
+        gap: 1rem;
+        align-items: center;
+    }
+    .greetins{
+        margin-bottom: 1rem;
+    }
+
+    .dm-message{
+        height: 15rem;
+    }
+
+    .dm-content {
+        height: 60%;
+    }
+
+    .dm-content .message-photo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+}
