@@ -1,7 +1,6 @@
 .section-container {
     max-height: 100%;
     max-width: 100%;
-   
 }
 
 .comment-header {
@@ -91,15 +90,16 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
     .comments {
-        height: 48vh;
+        height: 16rem;
     }
+    
    
 }
 
-@media screen and (min-width: 671px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
    
     .comments {
-        max-height: 60vh;
+        max-height: 16rem;
     }
 
     .react-icons {
@@ -108,13 +108,96 @@
     }
 }
 
-@media screen and (max-width: 760px) {
-    .comments {
-        height: auto;
-
+@media screen and (max-width: 955px) {
+   
+    .comments a{
+        display: flex;
+        flex-direction: column;
+        line-height: .5rem;
     }
 
+    .likes {
+        font-size: .8rem;
+    }
+
+    .react-icons {
+        font-size: 1.1em;
+    }
+
+    .comments {
+        max-height: 18rem;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .comment-header {
+       display: none;
+    }
+
+    .comments a{
+        flex-direction: row;
+    }
+
+    .comments {
+        max-height: 14rem;
+    }
+
+    .likes {
+        width: 100%;
+        height: 3rem;
+        flex-direction: row;
+        padding: .5rem .5rem ;
+    }
+
+    .react-icons {
+        margin: 0;
+    }
+
+    .yourcomment input {
+        padding: .5rem;
+    }
     
+   
+}
+
+@media screen and (max-width: 675px) { 
+    .bottom-section {
+        display: none;
+    }
+
+    .comments {
+        border: none;
+        font-size: .8rem;
+        gap: 1rem;
+    }
+
+    .comments a{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 515px) { 
+
+    .my-comment .span-name{
+        display: none;
+    }
+    .my-comment {
+        flex-direction: column;
+    }
+
+    .my-comment {
+        gap: .4rem;
+    }
+
+    .my-comment img{
+        display: none;
+    }
+
+
+    .comments a{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 270px) {
@@ -122,10 +205,7 @@
         display: none;
     }
 
-    .comments a{
-        flex-direction: column;
-    }
-    .my-comment {
-        flex-direction: column;
+    .comments {
+        font-size: .7rem;
     }
 }

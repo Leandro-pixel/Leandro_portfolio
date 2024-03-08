@@ -136,16 +136,7 @@ body {
     
 }
 
-@media screen and (max-width: 1100px) {
-    .image {
-        height: 12rem;
-    }
-    
-    .image img{
-        width: 16rem;
-        height: 12rem;
-    }
-}
+
 
 @media screen and (max-width: 760px) {
 
@@ -163,22 +154,30 @@ body {
 
     .descriptionModal {
         max-width: 60%;
-        max-height: 43%;
+        max-height: 20rem;
         border-radius: 2rem;
     }
 
     .enlarged-photo-container {
         max-width: 60%;
-        max-height: 40%;
+        max-height: 20rem;
         border-radius: 2rem;
         width: 100%;
     }
 
     
     .enlarged-photo-container img {
-        height: 60%;
+        height: 70%;
     }
    
+}
+
+@media screen and (max-width: 675px) {
+    .descriptionModal {
+        
+        max-height: 15rem;
+      
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -191,34 +190,26 @@ body {
         width: 12rem;
         height: 8rem;
     }
-    
-    .descriptionModal {
-        max-height: 38%;
-        font-size: 1.4rem;
-        width: 100%;
-    }
 
     .enlarged-photo-container {
-        max-height: 33%;
+        max-height: 15rem;
     }
 }
 
 @media screen and (max-width: 430px) {
-    .descriptionModal {
-        max-height: 30%;
-    }
+    
     .enlarged-photo-container img {
-        height: 40%;
+        height: 50%;
         
     }
     .enlarged-photo-container {
-        max-height: 33%;
+        max-height: 15rem;
     }
 }
 
 @media screen and (max-width: 360px) {
     .descriptionModal {
-        max-height: 30%;
+        max-height: 15rem;
         font-size: 1.6rem;
     }
     .enlarged-photo-container img {
@@ -226,30 +217,29 @@ body {
         width: 100%;
     }
     .enlarged-photo-container {
-        max-height: 33%;
+        max-height: 15rem;
         width: 50rem;
     }
 }
 
 @media screen and (max-width: 320px) {
     .descriptionModal {
-        max-height: 25%;
+        max-height: 15rem;
         font-size: 1.6rem;
     }
     .enlarged-photo-container img {
-        height: 40%;
+        height: 50%;
         width: 100%;
     }
     .enlarged-photo-container {
-        max-height: 26%;
+        max-height: 15rem;
         width: 50rem;
     }
 }
 
 @media screen and (max-width: 270px) {
     .descriptionModal {
-        max-height: 28%;
-        font-size: 1.6rem;
+        max-height: 14rem;
     }
     .enlarged-photo-container img {
         height: 40%;
@@ -257,7 +247,7 @@ body {
     }
 
     .enlarged-photo-container {
-        max-height: 26%;
+        max-height: 14rem;
         width: 50rem;
     }
 }

@@ -22,10 +22,10 @@ const CommentSection = ({photoIndex, profileInfo}) => {
         <div className="comments">
             <div className="my-comment">
             <img src={profileInfo.profile_picture_url} alt="" />
-            <span>{profileInfo.username}</span>Tecnologias
-            <div>
+            <span className='span-name'>{profileInfo.username}</span>Tecnologias
+            <div >
             {titles[photoIndex].icons.map((Icon, iconIndex) => (
-          <span key={iconIndex}>{React.createElement(Icon)} </span>
+          <span  key={iconIndex}>{React.createElement(Icon)} </span>
         ))}
             </div>
             
